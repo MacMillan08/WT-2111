@@ -1,0 +1,94 @@
+.img-frame {
+  padding: 10px;
+  border: 20px solid #0000;
+  outline: 1px solid #000;
+  outline-offset: -10px;
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+/*
+    Selam, üst kısmı ellemenize gerek yok. Örnek olarak koyduğum
+    ekran görüntülerinin biraz daha havalı durmasını sağlıyor sadece :)
+*/
+::selection {
+  background-color: #4CAF50; 
+  color: #fff; 
+}
+
+
+::-webkit-selection {
+  background-color: #4CAF50; 
+  color: #fff; 
+}
+
+p::first-letter {
+  background-color: red; 
+  color: white;         
+  font-size: 1.5em;     
+  padding: 0 5px;       
+  margin-right: 3px;    
+  line-height: 1;     
+}
+
+.skill-list {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+
+.skill-list li {
+    position: relative; 
+    padding-left: 30px; 
+    margin-bottom: 10px;
+    color: #333; 
+    transition: color 0.3s ease-in-out; 
+}
+
+
+.skill-list li::before {
+    content: '⏳ '; 
+    position: absolute;
+    left: 0; 
+    color: #FFA500; 
+}
+
+
+.skill-list li.checked::before {
+    content: '✅ '; 
+    color: #28a745; 
+}
+
+
+.skill-list li:hover {
+    color: red; 
+}
+
+::-webkit-scrollbar {
+  width: 30px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: blue; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: red; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkred; 
+}
+
+
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: red blue; 
+}
+.task-2::first-line {
+  background-color: blue; 
+  color: white; 
+  font-weight: bold; }
